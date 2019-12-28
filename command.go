@@ -6,13 +6,11 @@ import (
 	"os"
 )
 
-
 var name string
 var cmdLine = flag.NewFlagSet("my question", flag.ExitOnError)
 
-func init(){
+func init() {
 	//flag.Usage = usage
-
 
 	//flag.CommandLine = flag.NewFlagSet("", flag.PanicOnError)
 	//flag.CommandLine.Usage = func() {
@@ -24,13 +22,12 @@ func init(){
 
 }
 
-
-func usage(){
+func usage() {
 	fmt.Fprintf(os.Stderr, "Usage of %s: \n", "question")
 	flag.PrintDefaults()
 }
 
-func main() {
+func some() {
 	//flag.Parse()
 	cmdLine.Parse(os.Args[1:])
 	fmt.Println("cmd demo")
