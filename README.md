@@ -42,3 +42,22 @@ Then they see a message, "Passwords must be at least 6 characters long with at l
 提高了程序的灵活性
 降低了程序的可读性
 降低了程序的性能
+
+
+### easyjson 
+
+```bash
+go get -u github.com/mailru/easyjson/...
+easyjson -all <结构定义>.go
+```
+
+### 性能分析工具
+
+安装 graphviz: `brew install graphviz`
+将 $GOPATH/bin 加入到 $PATH
+Mac OS: 在 .bash_profile 中修改路径
+
+安装 go-torch: `go get -u github.com/uber/go-torch`
+
+下载并复制 flamegraph.pl (https://github.com/brendangregg/FlameGraph) 至 $GOPATH/bin 路径下
+将 $GOPATH/bin 加入 $PATH
